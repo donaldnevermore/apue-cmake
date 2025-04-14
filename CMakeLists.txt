@@ -6,7 +6,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_executable(apue ch01/read_write.c)
+add_executable(apue ch01/offset.c)
 
 target_include_directories(apue PRIVATE ${CMAKE_SOURCE_DIR}/include)
 target_link_libraries(apue PRIVATE ${CMAKE_SOURCE_DIR}/lib/libapue.a)
