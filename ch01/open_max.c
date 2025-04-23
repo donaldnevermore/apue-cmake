@@ -1,4 +1,3 @@
-// pic 2-17
 #include "apue.h"
 #include <errno.h>
 #include <limits.h>
@@ -11,6 +10,7 @@ static long openmax = 0;
 
 #define OPEN_MAX_GUESS 256
 
+// pic 2-17
 long open_max(void) {
     if (openmax == 0) {
         errno = 0;
@@ -23,4 +23,9 @@ long open_max(void) {
         }
     }
     return openmax;
+}
+
+int main(void) {
+    printf("open max: %ld\n", open_max());
+    return 0;
 }
