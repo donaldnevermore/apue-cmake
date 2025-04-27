@@ -1,4 +1,3 @@
-// pic 2-16
 #include "apue.h"
 #include <errno.h>
 #include <limits.h>
@@ -14,6 +13,7 @@ static long xsi_version = 0;
 
 #define PATH_MAX_GUESS 1024
 
+// fig 2-16
 char *path_alloc(size_t *sizep) {
     char *ptr;
     size_t size;
