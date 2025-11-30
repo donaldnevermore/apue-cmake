@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 4.0)
 project(apue VERSION 0.1.0)
 
 set(CMAKE_C_STANDARD 23)
@@ -6,7 +6,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_executable(apue ch01/offset.c)
+add_executable(apue ch03/fctl.c)
 
 target_include_directories(apue PRIVATE ${CMAKE_SOURCE_DIR}/include)
 target_link_libraries(apue PRIVATE ${CMAKE_SOURCE_DIR}/lib/libapue.a)
